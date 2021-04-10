@@ -1,0 +1,227 @@
+:root {
+    --main-border: 2px solid gray;
+    --main-bg-color: ivory;
+    --main-fg-color: green;
+    --main-heading-font: 'Montserrat', sans-serif;
+    --main-body-font: 'IBM Plex Serif', serif;
+}
+
+* {
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-size: large;
+}
+
+h1, h2 {
+    font-family: var(--main-heading-font);
+}
+
+p, nav a, li {
+    font-family: var(--main-body-font);
+}
+
+#profile-pic {
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+    padding: 40px;
+}
+
+.nav-link {
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    border-bottom: var(--main-border);
+    border-bottom-color: var(--main-fg-color);
+}
+
+.container {
+    width: 95%;
+    margin: 10px auto;
+}
+
+.resume-img-container {
+    width: 65%;
+    float: left;
+}
+
+.resume-img {
+    height: 30%;
+    width: 30%;
+    border-radius: 5px;
+    float: left;
+    clear: both;
+    display: block;
+    padding: 50px;
+    opacity: 85%;
+}
+
+.resume-img:hover {
+    opacity: 100%;
+}
+
+.resume-img-container  > h1 {
+    padding-left: 5%;
+    color: var(--main-fg-color);
+    font-size: 25px;
+}
+
+.resume-img-container  > h2 {
+    padding-left: 5%;
+    color: black;
+    font-size: 15px;
+}
+
+.resume-img-container  > p {
+    max-width: 55%;
+}
+
+.page-header {
+    color: var(--main-fg-color);
+    text-align:center;
+    margin: auto;
+    padding-bottom: 30px;
+    font-size: 35px;
+}
+
+.skills-education-container {
+    float: left;
+    width: 35%;
+}
+
+.skills-education-container h1 {
+    color: var(--main-fg-color);
+    font-size: 25px;
+    margin-left: 10%;
+}
+
+.skills-education-container ul {
+    list-style: none;
+}
+
+.skills-education-container ul li {
+    overflow-y: hidden;
+}
+
+.skills-education-container ul li::before {
+    content: "•";
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+.user-interface-work {
+    width: 90%;
+    margin: 10px auto;
+    min-height: 150px;
+    display: inline;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--main-fg-color);
+    font-size: 25px;
+}
+
+.contact-row {
+    clear: both;
+    text-align: center;
+}
+
+.contact-column {
+    border: var(--main-border);
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    overflow-y: hidden;
+    margin: 8px;
+}
+
+.desc {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-top: var(--main-border);
+    font-family: var(--main-body-font);
+    background-color: white;
+}
+
+.contact-column img {
+    height: 160px;
+    padding: 10px;
+}
+
+.contact-column:hover {
+    border: 3px solid var(--main-fg-color);
+}
+
+.portfolio-section {
+    /*width: 80%;*/
+    width: 1025px;
+    margin: 10px auto;
+}
+
+.portfolio-item {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    display: inline;
+    float: left;
+    border: var(--main-border);
+    border-radius: 10px;
+    margin-left: 55px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.portfolio-section > h2 {
+    text-align: center;
+    font-size: medium;
+    color: green;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 70%;
+    overflow-y: hidden;
+    opacity: 0.8;
+    border-bottom: var(--main-border);
+}
+
+.portfolio-item img:hover {
+    opacity: 100%;
+}
+
+#first-portfolio-item {
+    margin-left: 175px;
+}
+
+.portfolio-item .desc {
+    border: none;
+}
+
+.portfolio-item .desc {
+    width: 100%;
+    padding: 0px;
+    font-size: 15px;
+}
